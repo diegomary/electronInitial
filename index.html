@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Electron DM Test</title>
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    </head>
+    <body ng-app="core" ng-controller="CoreCtrl as vm" class = "container" >
+      <h1>Electron Main window with Angular.js 1.71</h1>
+      We are using node <script>document.write(process.versions.node)</script>,
+      Chrome <script>document.write(process.versions.chrome)</script>,
+      and Electron <script>document.write(process.versions.electron)</script>.     
+      <p> Test Angular core module with a sum of 2 + 3 = {{2+3}}</p>
+      <p>Test Angular Main Controller: {{vm.title}}</p>
+      
+      <script src="frontendjs/angular.min.js"></script>      
+      <script src="frontendjs/core.js"></script>
+      <script src="frontendjs/coreController.js"></script>
+    </body>
+  </html>
